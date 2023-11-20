@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <img src="images/pattern-bg-desktop.png" alt="" class="splash-pattern" />
+      <div class="ip-container--search">
+        <span class="page-title">IP Address Tracker</span>
+        <div class="ip-search">
+          <input
+            class="ip-search--input"
+            type="text"
+            placeholder="Search for any IP address or domain..."
+          /><button class="ip-search--btn">
+            <img src="images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="ip-container--results">
+        <div class="col-title" id="ip-address">
+          <span>IP Address</span>
+          <div class="col-data" id="ip-address">192.212.174.101</div>
+        </div>
+        <div class="col-title" id="location">
+          <span>Location</span>
+          <div class="col-data" id="location">Brooklyn, NY 10001</div>
+        </div>
+        <div class="col-title" id="timezone">
+          <span>Timezone</span>
+          <div class="col-data" id="timezone">UTC -5:00</div>
+        </div>
+        <div class="col-title">
+          <span>ISP</span>
+          <div class="col-data" id="isp">SpaceX Starlink</div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
